@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+//   function combinacoes(){
+//     var result1 = document.getElementById('result1')
+//     var num = parseInt(document.getElementById('inp1form1').value)
+//     function calcularPossibiidades(open,closed){
+//         if(open === 0 && closed === 0)
+//             return 1       
+//         var res = 0;
+//         if(open>0)
+//             res +=calcularPossibiidades(open-1,closed);
+//         if(closed>open)
+//         res+= calcularPossibiidades(open,closed-1)
+//         return res
+        
+//     }
+//     result1.innerHTML = calcularPossibiidades(num,num)
+// }
+
+
+function MinWindowSubstring(strArr){
+  let str = strArr[0];
+  let fatia = strArr[1].split('');
+
+  for(let i = fatia.length, len = str.length ; i <= len ; i++){
+    for(j = 0; j <= len -i;  j++){
+      let mySlice = str.substr(j,i);
+      if(localizar(mySlice)){
+        return mySlice;
+      }
+    }
+  }
+  return 'Não encontrado na string'
+
+  function localizar(str){
+    let arr = str.split('')
+    for(let i = 0, len = fatia.length; i < len; i++){
+      let local = arr.findIndex(val => {
+        return val === fatia[i]
+      })
+      if(local === -1){
+        return false
+      }else{
+        arr.splice(local,1);
+      }
+    }
+    return true
+  }
+}
+alert(MinWindowSubstring(["aaaaaaabaaddae", "aed"]))
+</script>
+</body>
+</html>

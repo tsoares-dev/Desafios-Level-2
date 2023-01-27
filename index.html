@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio Level 2</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <nav> <!--Navbar= Elemento de navegação-->
+    <ul> <!--Lista de Itens-->
+        <li><a href="./index.html">Inicio</a>
+        </li>
+        <li><a href="./assets/pages/projetos.html">Projetos</a>
+        </li>
+        <li><a href="./assets/pages/contato.html">Contato</a>
+        </li> <!--Itens da lista-->
+        <li><a href="https://github.com/tsoares-dev" target="_blank">Github</a>
+        </li>
+    </ul>
+  </nav>
+  <h1>Desafio level 2</h1><hr>
+
+  <h2>Atividade proposta no Bootcamp de <strong>ServiceNow</strong> na <strong>SoulCode Academy</strong></h2>
+  <p>Por: Thiago Silva Soares</p>
+  <h2>Desafios Propostos</h2>
+    <p><strong>1. </strong>Faça com que a função Combinações ( num ) leia num que será um inteiro maior ou igual a zero e retorne o número de combinações válidas que podem ser formadas com num pares de parênteses. Por exemplo, se a entrada for 3, então as combinações possíveis de 3 pares de parênteses, a saber: ()()(), são ()()(), ()(()), (())(), ((())), e (()()). Existem 5 combinações totais quando a entrada é 3, então seu programa deve retornar 5.</p>
+    <p><a href="./assets/pages/atv1.html"><strong>(Resolução)</strong></a></p><br>
+
+    <p><strong>2. </strong>Faça com que a função MinWindowSubstring( strArr ) pegue a matriz de strings armazenada em strArr , que conterá apenas duas strings, sendo o primeiro parâmetro a string N e o segundo parâmetro sendo uma string K de alguns caracteres, e seu objetivo é determinar o menor substring de N que contém todos os caracteres em K. Por exemplo: se strArr é ["aaabaaddae", "aed"] então a menor substring de N que contém os caracteres a, e e d é "dae" localizado no final da corda. Portanto, para este exemplo, seu programa deve retornar a string dae.</p>
+
+    <p><strong>Outro exemplo:</strong> se strArr é ["aabdccdbcacd", "aad"] então a menor substring de N que contém todos os caracteres em K é "aabd" que está localizada no início da string. Ambos os parâmetros serão strings com comprimento de 1 a 50 caracteres e todos os caracteres de K existirão em algum lugar na string N. Ambas as strings conterão apenas caracteres alfabéticos minúsculos.</p> 
+    <p><a href="./assets/pages/atv2.html"><strong>(Resolução)</strong></a></p><br>
+
+    <p><strong>3. </strong>Faça com que a função BracketMatcher( str ) pegue o parâmetro str que está sendo passado e retorne 1 se os colchetes forem correspondidos corretamente e cada um for contabilizado. Caso contrário, retorne 0 . Por exemplo: se str for "(hello (world))", a saída deve ser 1 , mas se str for "((hello (world))" a saída deve ser 0 porque os colchetes não correspondem corretamente. Somente "(" e ")" serão usados ​​como colchetes. Se str não contiver colchetes, retorne 1.</p>
+    <p><a href="./assets/pages/atv3.html"><strong>(Resolução)</strong></a></p><br>
+
+    <p><strong>4. </strong>Faça com que a função SoulcodeUsernameValidation( str ) pegue o parâmetro str que está sendo passado e determine se a string é um nome de usuário válido de acordo com as seguintes regras:</p>
+    <p>1. O nome de usuário tem entre 4 e 25 caracteres.</p>
+    <p>2. Deve começar com uma letra.</p>
+    <p>3. Pode conter apenas letras, números e o caractere de sublinhado.</p>
+    <p>4. Não pode terminar com um caractere de sublinhado.</p>
+
+    <p>Se o nome de usuário for válido, seu programa deve retornar a string  , caso contrário, retornar a string.</p>
+    <p><a href="./assets/pages/atv4.html"><strong>(Resolução)</strong></a></p><br>
+
+    <p><strong>5. </strong>Faça com que a função FindIntersection( strArr ) leia a matriz de strings armazenada em strArr que conterá 2 elementos: o primeiro elemento representará uma lista de números separados por vírgula classificados em ordem crescente, o segundo elemento representará uma segunda lista de números separados por vírgula números (também ordenados). Seu objetivo é retornar uma string separada por vírgula contendo os números que ocorrem nos elementos de strArr em ordem de classificação. Se não houver interseção, retorne a string false .</p>
+    <p>Exemplos
+    Entrada: ["1, 3, 4, 7, 13", "1, 2, 4, 13, 15"]
+    Saída: 1,4,13</p>
+
+    <p>Entrada: ["1, 3, 9, 10, 17, 18", "1, 4, 9, 10"]
+    Saída: 1,9,10</p>
+    <p><a href="./assets/pages/atv5.html"><strong>(Resolução)</strong></a></p><br>
+
+    <p><strong>6. </strong>Faça com que a função FirstReverse( str ) pegue o parâmetro str que está sendo passado e retorne a string na ordem inversa. Por exemplo: se a string de entrada for "Hello World and Coders", seu programa deve retornar a string sredoC dna dlroW olleH.</p>
+    <p>Entrada: "soulcode"
+    Saída: edocluos</p>
+
+    <p>Entrada: "I Love Code"
+    Saída: edoC evoL I</p>
+    <p><a href="./assets/pages/atv6.html"><strong>(Resolução)</strong></a></p><br>
+
+    <p><strong>7. </strong>Faça com que a função QuestionsMarks( str ) pegue o parâmetro string str , que conterá números de um dígito, letras e pontos de interrogação, e verifique se há exatamente 3 pontos de interrogação entre cada par de dois números que somam 10. Em caso afirmativo, então seu programa deve retornar a string true , caso contrário, ele deve retornar a string false. Se não houver dois números que somam 10 na string, seu programa também deve retornar falso.</p>
+    </p>Por exemplo: se str for "arrb6???4xxbl5???eee5" então seu programa deve retornar true porque existem exatamente 3 pontos de interrogação entre 6 e 4 e 3 pontos de interrogação entre 5 e 5 no final da string.</p>
+    <p>Exemplos
+    Entrada: "aa6?9"
+    Saída: falso</p>
+
+    <p>Entrada: "acc?7??sss?3rr1??????5"
+    Saída: verdadeiro</p>
+    <p><a href="./assets/pages/atv7.html"><strong>(Resolução)</strong></a></p><br>
+
+    <p><strong>8. </strong>Faça com que a função LongestWord( sen ) pegue o parâmetro sen que está sendo passado e retorne a palavra mais longa na string. Se houver duas ou mais palavras com o mesmo comprimento, retorne a primeira palavra da string com esse comprimento. Ignore a pontuação e assuma que sen não estará vazio. As palavras também podem conter números, por exemplo "Hello world123 567" </p>
+    <p><a href="./assets/pages/atv8.html"><strong>(Resolução)</strong></a></p><br><br>
+    
+    <img src="./assets/img/1930 (1).jpg" alt="">
+    <img src="./assets/img/programacao-1024x684.jpg.webp" alt=""><br>
+    Service Now - HTML / CSS
+      <br>
+      <p><h1>Linkedin</h1>
+        <a href="https://www.linkedin.com/in/thiago-ssoares/" target="_blank"><img src="./assets/img/perfil-full.jpg" alt="Linkedin"></a>
+      </p>
+  
+</body>
+</html>
