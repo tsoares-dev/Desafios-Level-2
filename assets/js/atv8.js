@@ -36,5 +36,4 @@ if (word.trim().length > big.length) {
   big = word.trim()
   }
 })
-// console.log(big)
 alert(big)
